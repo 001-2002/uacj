@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo2.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+   
+    <title>BITACORA</title>
+    </head>
+<body>
+    <main>
+        <header>
+        <h1>UNIDAD 1</h1>
+            <nav><a href="index.html">Css</a>
+             <a href="index2.html">JavaScript</a>
+            <a href="index3.html">Responsivo</a></nav>
+            <div id="menu"><ul>
+                <li><a href="#concep">CONCEPTOS BASICOS</a></li>
+                <li><a href="#dom">DOM HTML</a></li>
+                <li><a href="#refe">REFERENCIAS</a></li>
+                <li><a href="#style">PROPIEDAD STYLE</a></li>
+                <li><a href="#eventos">EVENTOS CON JS</a></li>
+                <li><a href="#list">CLASSLIST</a></li>
+                </ul></div>
+        </header>
+        <section><div id="texto">
+        <div id="concep"><h1>JavaScript</h1>
+        <p>Es un lenguaje de secuencias de comandos que te permite crear contenido de actualización dinámica, controlar multimedia, animar imágenes y prácticamente todo lo demás. (Está bien, no todo, pero es sorprendente lo que puedes lograr con unas pocas líneas de código JavaScript).<br>Con este lenguaje de programación del lado del cliente (no en el servidor) podemos crear efectos y animaciones sin ninguna interacción, o respondiendo a eventos causados por el propio usuario tales como botones pulsados y modificaciones del DOM (document object model). Por tanto, nada tiene que ver con el lenguaje de programación Java, ya que su principal función es ayudar a crear páginas webs dinámicas.<br>El código de programación de JavaScript se ejecuta en los navegadores, ya sean de escritorio o móviles, ya sean Android o Iphone. Sirve para exactamente lo mismo, da igual en el tipo de dispositivo que se ejecute el navegador.</p></div>
+        <fieldset id="dom"><legend><h2>DOM HTML</h2></legend>
+        <p>El Modelo de objetos de documento (DOM) del W3C es una plataforma y una interfaz de lenguaje neutral que permite que los programas y los scripts accedan y actualicen dinámicamente el contenido, la estructura y el estilo de un documento. Cuando se carga una página web, el navegador crea un Modelo de objeto de documento de la página, con el DOM, los programadores pueden construir documentos, navegar por su estructura, y añadir, modificar, o eliminar elementos y contenido. Se puede acceder a casi cualquier elemento que se encuentre en un documento HTML. En pocas palabras el DOM es una interfaz que implementan los navegadores para poder interactuar con los elementos HTML</p><br>
+            
+        <ul><li><b>Conversión:</b> el navegador lee los bytes sin procesar del HTML del disco o de la red y los traduce en caracteres individuales según la codificación especificada del archivo (por ejemplo, UTF-8).</li>
+        <li><b>Conversión en tokens:</b> el navegador convierte cadenas de caracteres en tokens diferentes —especificados por el estándar W3C HTML5; por ejemplo, “html”, “body” —y otras cadenas entre paréntesis angulares. Cada token tiene un significado especial y un conjunto de reglas propio</li>
+        <li><b>Lexicalización:</b> los tokens emitidos se convierten en “objetos” que definen sus propiedades y reglas.</li>
+        <li><b>Construcción del DOM:</b> Por último, los objetos creados se vinculan en una estructura de datos en forma de árbol que muestra las relaciones entre objetos primarios y secundarios definidas en el HTML original.</li></ul><img src="imagen/DOM1.png">
+        
+            <h3>Encontrar elementos por su id.</h3>
+        <p>El método getElementById() encuentra al elemento que tiene el idespecificado, este método es uno de los más comunes en HTML DOM, y se usa casi cada vez que desea manipular u obtener información de un elemento en su documento.
+        Como ya sabemos, un iddebe ser único en un archivo HTML. Sin embargo, si existe más de un elemento con el idespecificado, el método getElementById() devuelve el primer elemento en el código fuente. Si no hay elementos con el idespecificado devuelve null.</p>
+            <h3>Encontrar elementos por su nombre de clase.</h3>
+        <p>El método getElementsByClassName() devuelve una colección de todos los elementos en el documento con el nombre de clase especificado, como un objetoHTMLCollection(lista de elementos HTML).
+        El objeto HTMLCollectionrepresenta una colección de nodos. Se puede acceder a los nodos por números de índice. El índice comienza en 0.</p>
+        <h3>Encontrar elementos por su nombre de etiqueta.</h3>
+        <p>El método getElementsByTagName() devuelve una colección de todos los elementos en el documento con el nombre de etiqueta especificado, como un objeto HTMLCollection. El objeto HTMLCollectionrepresenta una colección de nodos. Se puede acceder a los nodos por números de índice. El índice comienza en 0.
+        Con el valor del parámetro "*" devuelve todos los elementos en el documento. Usando la propiedad de lenghtdel objeto HTMLCollectionpara determinar la cantidad de elementos con el nombre de etiqueta especificado, luego puede recorrer todos los elementos y extraer la información que desee.</p>
+        <h3>Encontrar elementos por su selector CSS.</h3>
+        <p>El método querySelector() devuelve el primer elemento que coincide con un selector CSS especificado en el documento. Si el selector coincide con una "id" en el documento que se usa varias veces (hay que tener en cuenta que un "id" debe ser único dentro de una página y no debe usarse más de una vez), devuelve el primer elemento coincidente.
+        El método querySelector() solo devuelve el primer elemento que coincide con los selectores especificados. Para devolver todas las coincidencias, utilice el método querySelectorAll() en su lugar, tambien  devuelve todos los elementos del documento que coinciden con un selector "id" especificado, como un objeto NodeListestático. document.querySelectorAll('selector CSS, o varios selectores separados por comas’);</p>
+        </fieldset>
+        <fieldset id="refe"><legend><h2>Referenciando</h2></legend>
+        <p>Usamos el atributo src en la etiqueta <em>script</em> para vincular el archivo JavaScript al archivo HTML en este método. El atributo src se utiliza para especificar la URL o la ubicación del archivo externo. Si deseamos utilizar el mismo JavaScript en varias páginas de un sitio web, debemos crear un archivo JavaScript externo en lugar de escribir el mismo una y otra vez. Escribimos el <em>script</em> dentro de la etiqueta <em>head</em> en HTML.<br>
+        A diferencia del primer método, agregamos el código de JavaScript en el archivo HTML usando la etiqueta <em>script</em>. La etiqueta script se utiliza para agregar un script del lado del cliente. Podemos escribir el JavaScript internamente dentro de la etiqueta <em>script</em> en un archivo HTML. Cuando ejecutamos el archivo HTML, veremos el JavaScript cargado.</p></fieldset>
+        <fieldset id="style"><legend><h2>Propiedad Style</h2></legend>
+        <p>El objeto básico style, presenta los estilos definidos para el DOM en su especificación de nivel 2.
+        Para obtener los objetos style de un document, podemos usar la propiedad document.styleSheets y llegar a los distintos objetos por su índice (por ejemplo: document.styleSheets[0] es la primer stylesheet definida en el documento, etc.). Aunque hay varias formas y sintaxis para expresar una stylsheet para un documento, Netscape implementa exclusivamente, CSS, de manera que el objeto style obtenido por este método, es a la vez StyleSheet y CSSStyleSheet.<br><br>El elemento propiedad style puede ser usado también para leer o establecer el estilo de un elemento. Sin embargo, esta propiedad solo devuelve atributos de estilo que han sido establecidos in-line (por ejemplo: <em>td style="background-color: lightblue"</em> devuelve la cadena "background-color: lightblue" o directamente para ese elemento usando element.style.propertyName, aún si hay otros estilos definidos para ese elemento en un stylesheet).
+        De igual manera, cuando establecemos esa propiedad en un elemento, sobreescribimos y borramos cualquier estilo que hubiera sido fijado en alguna otra parte para la propiedad particular de ese elemento que estamos estableciendo.</p>
+           
+            <h3>El objeto estilo (style) de DOM</h3>
+            <p>El objeto style representa una sentencia de estilo individual. Al contrario de las reglas individuales disponibles en la colección: document.styleSheets, se accede al objeto style a partir del document o desde el elemento para el cual se aplica el estilo. Representa pues, el estilo in-line de ese elemento.<br>
+             Si embargo, que el método setAttribute eliminará cualquier otra propiedad que haya podido ser definida en el estilo del objeto. Si el elemento some-element arriba, tenia un atributo de estilo in-line como style="font-size: 18px", ese valor habrá sido eliminado por el uso de setAttribute.
+            </p></fieldset>
+        <fieldset id="eventos"><legend><h2>Eventos</h2></legend>
+        <p>El modelo simple de eventos se introdujo en la versión 4 del estándar HTML y se considera parte del nivel más básico de DOM. Aunque sus características son limitadas, es el único modelo que es compatible con todos los navegadores y por tanto, el único que permite crear aplicaciones que funcionan de la misma manera en todos los navegadores.</p>
+        <h3>Tipos de eventos.</h3>
+        <p>El nombre de los elementos se contruye mediante el prefijo <em>on</em>, seguido del nombre en ingles de la accion asociada al evento. El evento de pinchar un elemento con el ratón se denomina onclick y el evento asociado a la acción de mover el ratón se denomina onmousemove. os eventos más utilizados en las aplicaciones web tradicionales son onload para esperar a que se cargue la página por completo, los eventos onclick, onmouseover, onmouseout para controlar el ratón y onsubmit para controlar el envío de los formularios. Las acciones típicas que realiza un usuario en una página web pueden dar lugar a una sucesión de eventos.<br>
+        Para que los eventos resulten útiles, se deben asociar funciones o código JavaScript a cada evento. De esta forma, cuando se produce un evento se ejecuta el código indicado, por lo que la aplicación puede responder ante cualquier evento que se produzca durante su ejecución.</p>
+            <img src="imagen/EVENTO%201.png">
+            <img src="imagen/EVENTO%202.png">
+        <h3>Manejadores como atributo.</h3>
+        <p>Se trata del método más sencillo y a la vez menos profesional de indicar el código JavaScript que se debe ejecutar cuando se produzca un evento. En este caso, el código se incluye en un atributo del propio elemento HTML. En este método, se definen atributos HTML con el mismo nombre que los eventos que se quieren manejar. El contenido del atributo es una cadena de texto que contiene todas las instrucciones JavaScript que se ejecutan cuando se produce el evento.</p>
+        <h3> Manejadores de eventos y variable THIS.</h3>
+        <p>JavaScript define una variable especial llamada this que se crea automáticamente y que se emplea en algunas técnicas avanzadas de programación. En los eventos, se puede utilizar la variable this para referirse al elemento HTML que ha provocado el evento. Dentro del código de un evento, JavaScript crea automáticamente la variable this, que hace referencia al elemento HTML que ha provocado el evento. </p>
+        <h3>Manejadore de eventos como funciones externas.</h3>
+        <p>La definición de manejadores de eventos en los atributos HTML es un método sencillo pero poco aconsejable para tratar con los eventos en JavaScript. El principal inconveniente es que se complica en exceso en cuanto se añaden algunas pocas instrucciones, por lo que solamente es recomendable para los casos más sencillos. Cuando el código de la función manejadora es más complejo, como por ejemplo la validación de un formulario, es aconsejable agrupar todo el código JavaScript en una función externa que se invoca desde el código HTML cuando se produce el evento. En las funciones externas no es posible utilizar la variable this de la misma forma que en los manejadores insertados en los atributos HTML. </p>
+            </fieldset>
+        <fieldset id="list"><legend><h3>ClassList</h3></legend>
+        <p>Es classList es una propiedad de solo lectura de un elemento que devuelve una colección, es un objeto que representa el DOMTokenListcontenido del atributo de clase del elemento, puede manipular las clases que contiene utilizando varios métodos.
+        La propiedad classList devuelve los nombres de clase de un elemento, esta propiedad es útil para agregar, eliminar y alternar clases CSS en un elemento, se puede modificarla utilizando los métodos add(), remove() y toggle().<br>
+        La propiedad classList no es soportada en IE9 y versiones anteriores.</p>
+            <h3>getElementById.</h3>
+        <p>El método getElementById permite, como su nombre indica, seleccionar un elemento del documento por medio del valor del atributo id que se le haya asignado. Por medio de esta línea podríamos elegir cualquier elemento cuyo identificador conozcamos para manipularlo posteriormente. Por ejemplo, por medio de document.getElementById('contenido') seleccionaríamos el elemento con id="contenido". Como todo método, getElementById tiene que ser un método de un objeto; para éste y para todos los métodos que vamos a ver en esta sección sobre el DOM, el objeto del que dependen es document.</p>
+        <h3>ClassList.add</h3>
+        <p>La propiedad classList más el método add agrega uno o más nombres de clase a un elemento. Si la clase especificada ya existe, la clase no se agregará.</p>
+        <h3>ClassList.remover</h3>
+        <p>La propiedad classList más el método remove elimina uno o más nombres de clase de un elemento. Eliminar una clase que no existe, NO arroja un error.</p>
+        <h3>ClassList.toggle</h3>
+        <p>la propiedad classList más el método toggle alterna entre un nombre de clase para un elemento. El primer parámetro elimina la clase especificada de un elemento y devuelve falso. Si la clase no existe, se agrega al elemento y el valor de retorno es verdadero. El segundo parámetro opcional es un valor booleano que obliga a agregar o quitar la clase, independientemente de si ya existía o no.</p><ul>
+        <li>Eliminar una clase: element.classList.toggle ("classToRemove", false);</li>
+        <li>Agregue una clase: element.classList.toggle ("classToAdd", true);</li></ul></fieldset></div>
+        
+        </section>
+             <footer>
+            <div id="pie">
+         <ul>
+        <li> <a href="">INICIO</a></li><br>
+       
+        <li> <a href="CSS.html">UNIDAD 1</a><br></li><br>
+        <li>  <a href="">UNIDAD 2</a></li><br>
+    <li> <a href="">UNIDAD 3</a></li><br>
+     
+    </ul></div> 
+    <div id="redes">
+        <p>redes sociales</p>
+        <a href="https://www.facebook.com/mady.zgz"><i class="fa fa-facebook-official" style="font-size: 24px"></i></a>
+        <a href="https://www.youtube.com/channel/UCqNa4ZRIcMKUt1BJIZ6ENWw"> <i class="fa fa-youtube-play"style="font-size: 24px"></i></a>
+        
+    </div>
+    
+      <p id="dise">Diseñado por Mad Zaragoza</p> 
+            </footer>
+    </main>
+    </body>
+</html>
