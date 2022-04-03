@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/estilo1.css">
+     <link rel="stylesheet" href="css/estilo3.css">
+     <link rel="stylesheet" href="css/estilo4.css">
+     <link rel="stylesheet" href="css/estilo5.css">
+     <link rel="stylesheet" href="css/estilo6.css">
+     <link rel="stylesheet" href="css/estilo7.css">
+    
+     <title>BITACORA</title>
+    </head>
+<body>
+<main>
+<header><div class="encabezado">
+    <h1>UNIDAD 2</h1>
+    <nav id="menu">
+       <div class="dropdown">
+   <button onclick="myFunction()" class="drop-button">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+     
+        <a href="index1.html">Home</a>
+        <a href="#prow">Propiedad width</a>
+        <a href="#svg">SVG</a>
+        <a href="#uni">Unidades de medidas</a>
+        <a href="#tipo">Tipografia</a>
+        <a href="#formu">Formularios</a>
+        <a href="#rese">Reset.</a>
+        <a href="#norma">Normalize</a>
+      <a href="#vari">Variables</a>
+      <a href="index4.html">Sinaptica</a>
+         </div>
+  </div></nav>
+    <script>/*Cuando se hace click en el botón, muestra el submenu*/
+function myFunction() {   
+  //Añade una clase al elemento que tenga el id myDropdown
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+//Cierra el submenu si se clica fuera
+window.onclick = function(event){
+  if(!event.target.matches('.drop-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0;  i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      //Busca dentro de drop-content los elementos con la clase show
+      if (openDropdown.classList.contains('show')){
+        //elimina la clase show de los elementos dentro de drop-content
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+    
+    </div>
+</header>
+   
+    <section><div class="contenido">
+        <fieldset id="prow">
+            <legend><h2>Propiedad width</h2></legend>
+        <p>Cuando el ancho de la imagen es porcentaje y la altura automática esta disminuirá o aumentara su tamaño, la imagen se volverá responsiva de acuerdo con el elemento contenedor que la obtenga. La imagen con el width 100% el problema es que se ampliara más allá de sus dimensiones.</p><h3>max-width.</h3><p>La imagen tiene el max-width al 100% la imagen se va haciendo más grande hasta obtener sus dimensiones originales.</p>
+        <img src="imagenes/MAX-W.png" class="ima">
+        <h3>Imágenes de fondo</h3><p>Si se quieren modificar la imagen de fondo se utiliza tres funciones del background size.</p>
+        <h4>Background size</h4><p>Con <b> contain</b> la imagen se encontrará contenida entre el tamaño del alto y ancho del elemento contenedor, si se trabaja 100%- 100% nos dice que estará en un 100% tanto en alto como en ancho de su elemento contenedor.</p><img src="imagenes/ALCIEN.png" class="ima1">
+        <p>En <b>cover</b> la imagen de fondo se escalará para cubrir todo el fondo del elemento contenedor, que se empezará a verse cortada dependiendo de lo que escalo.</p><img src="imagenes/cortada.png" class="ima1">
+        <h4>Diferentes imágenes.</h4><p>media queries, una imagen grande es perfecta para una pantalla grande, pero ¿Para qué cargar una imagen grande si se va a hacer chica?, para reducir la carga o por cualquier otra razón, se puede usar la media queries para colocar diferentes imágenes para diferentes dispositivos.</p><img src="imagenes/distintas.png" class="ima1"><h4>Etiqueta picture</h4><p>El elemento picture funciona de manera similar a los elementos video y audio. Se pueden configurar diferentes fuentes y la primera fuente que se ajusta a las preferencias es la que se está utilizando.</p></fieldset>
+        <fieldset id="svg"><legend><h2>Gráficos vectoriales escalables</h2></legend>
+        <p>En los primeros días de la web, hubo una explosión de diferentes formatos y extensiones de HTML, quedo claro que un formato de grafico vectorial para la web sería útil.</p><p>En 1996 Chris Lilley redacto un documento para los requisitos generales de cómo debía ser los gráficos vectoriales para la web, otros más propusieron las suyas:</p><ul>
+        <li>Web schematics: de CCLRC.</li>
+        <li>PGML: de adobe, IBM, netscape y sun.</li><li>VML: de autodesk, macromedia y microsoft.</li><li>Hyper Graphis Markup Language de orange.</li></ul>
+           <p>Como resultado se creó el SVG WG (working group) decidió no desarrollar ninguna de las presentaciones, sino que desarrollo un nuevo lenguaje. SVG es un lenguaje de marcado para describir imágenes y aplicaciones de gráficos bidimensionales y un conjunto de interfaces de scripts de gráficos relacionados, se convirtió en una recomendación del W3C de septiembre del 2001.</p><div class="laima"><img src="imagenes/W.svg"></div><p>Es un formato de gráficos libre de derechos de uso generalizado desarrollado y mantenido por el W3C SVG Working GROUP, es un grupo público. Se encuentra trabajando actualmente en el desarrollo y agregara nuevas características de facilidad de uso, así como una integración más cercana con el HTML, CSS, y el DOM.</p><p>Los archivos son gráficos vectoriales bidimensionales, tanto estáticos como animados en formato XML. se puede utilizar con imágenes como formas, texto, trazado, efectos de filtro.</p><p>Son compactos y ofrecen gráficos de alta calidad en internet, en impresoras e incluso en dispositivos portátiles.<br>
+        Está basado en XML y ofrece muchas ventajas tanto para desarrolladores como para usuarios.</p><ul>
+        <li>Crear y editar con cualquier editor de texto.</li>
+        <li>Imprimir con alta calidad en cualquier resolución.</li>
+        <li>Ampliar sin perder calidad de la imagen.</li>
+        <li>Son escalables.</li>
+        <li>Son un estándar abierto.</li>
+        <li>Los gráficos no pierden calidad si se amplían o cambian de tamaño.</li></ul>
+            
+        </fieldset>
+        <fieldset id="uni" ><legend><h2>Unidades de medida. </h2></legend><p>Las medidas en CSS se emplean para definir las alturas, anchuras y márgenes de los elementos y para establecer el tamaño de letra del texto. Todas las medidas se indican con un valor numérico.</p><p>CSS divide las unidades de medida en dos grupos: absolutas que establecen de forma completa el valor de una medida, por lo que su valor real es directamente el valor indicado, y relativas que definen su valor en relación con otra medida, por lo que, para obtener su valor real, se debe realizar alguna operación con valor indicado.</p><p>Si el valor es cero, la unidad de medida es opcional, pero si es distinta a cero y no indica ninguna unidad, la medida es ignorada completamente. Las unidades de longitud relativa especifican una longitud relativa a otra propiedad de longitud, y son:</p><ul>
+        <li><b>El porcentaje.</b></li>
+        <li><b>em</b>relativa al tamaño de la fuente del elemento.</li>
+        <li><b>ex</b>relativo a la altura de x de la fuente actual.</li>
+        <li><b>rem</b>relativo al tamaño de fuente del elemento raíz.</li>
+        <li><b>vw </b>relativo al 1% del ancho de la etiqueta viewport.</li>
+        <li><b>vh</b>relativo al 1% de alto de la etiqueta viewport.</li>
+        <li><b>vmin</b>relativo al 1% de la dimensión más pequeña de la etiqueta viewport.</li>
+        <li><b>vmax</b>relativo al 1% de la dimensión más larga de la etiqueta viewport.</li></ul><p>Los em y los rem son más prácticos para crear un diseño perfectamente escalable.</p><p>Las unidades de longitud absolutas son fijas y su valor no depende de otro valor de referencia. Una longitud expresa en cualquiera de ellas aparecerá exactamente como ese tamaño. no se recomienda el uso de unidades de longitud absoluta en la página, ya que los tamaños de pantalla varían mucho, sin embargo, se pueden usar si se conoce el medio de salida.</p><h4>Longitudes absolutas:</h4><ul>
+           <li>Centímetros <em>cm</em></li>
+           <li>Milímetros <em>mm</em></li>
+           <li>Pulgadas <em>in</em></li>
+           <li>Pixeles <em>px</em></li>
+           <li>Puntos <em>pt</em></li>
+           <li>Picas <em>pc </em></li></ul>
+    </fieldset>
+        <fieldset id="tipo"><legend><h2>Tipografía responsiva </h2></legend>
+        <p>El texto es parte imprescindible de la web. De nada sirve todo el esfuerzo que se imprima en el proyecto web si las palabras no llegan a un lector, que será tu futuro cliente. Debemos conseguir que el mensaje sea recibido de la mejor forma posible.</p><p>Lo más importante es que el texto se pueda leer.</p><p>Además de tomar decisiones de diseño sobre la forma, se deben definir un cuerpo, tamaño para el texto, como se relacionan unos elementos con otros y lo demás elementos que conviven en el proyecto web. Pensar que la legibilidad es un factor clave en los beneficios que puedes generar con tu sitio web.</p><p>Junto con el color, la tipografía puede alterar por completo el significado que asociamos a un proyecto, el texto puede decir una cosa; pero las letras, otra muy diferente.</p><h3>Legibilidad.</h3><p>Se define como la cualidad de lo que es legible; Básicamente es la facilidad con que se puede leer y comprender un texto, es decir, es la aptitud de un texto de ser leído fácil y cómodamente, y esta aptitud en la web hace referencia a la familia tipográfica, color y contraste de la tipografía, etc.</p><img src="imagenes/legible.png" id="ge1"><h3>El tamaño de letra.</h3><p>Estudios concluyen que es un error costoso si el texto es menor a 16px, ya que no es un tamaño grande, es el tamaño por defecto en muchos de los navegadores. Con el consumo de contenido cada vez mayor en móvil, el tamaño de la fuente para móvil también debe permitir una lectura cómoda. Los usuarios suelen tener el texto más cercas de los ojos cuando navegan en el móvil que cuando lo hacen en el escritorio.</p><img src="imagenes/tama%C3%B1o.png" id="ge2"><p>Los usuarios de la web son tus clientes que de alguna forma van a consumir los productos y servicios, y debemos crear un ambiente agradable. En un proyecto web esto se logra proporcionando la mejor experiencia de usuario posible, y los usuarios lo que más hacen en la web es leer.</p><h3>Numero de palabras por línea.</h3><p>El ancho de línea es otro factor decisivo. Según John Kane en su manual de tipografía, el ancho de línea optimo contiene entre 35 y 65 caracteres. Aunque estas indicaciones fueron sugeridas para el papel en un principio, sirven también para la legibilidad de una página web.</p><h3>Combinación Tipográfica.</h3><p>Usar diferentes familias tipográficas te permitirá separar e identificar mejor los bloques de texto, establecer jerarquías claras, mejorar la legibilidad de los textos y en definitiva, hacer que el usuario se quede más tiempo en la web. Cada proyecto tiene sus propias necesidades. Pero como casi siempre, menos, es más. No es necesario utilizar más de dos familias tipográficas, cuando hablamos de web.</p><h3>Interlineado.</h3><p>En la web el interlineado lo podemos ajustar con la propiedad alto de línea o line-height, que es la distancia entre dos líneas, la recomendación es establecerlo al 120% (multiplicar por 1.2) del tamaño del texto, no obstante, como casi siempre trabajamos con letras, tenemos que darle más importancia al aspecto visual, la apariencia óptica, que a los números y a las matemáticas.</p>
+        <h3>Color.</h3><p>Uno de los principales errores que cometen actualmente los diseñadores web es emplear combinaciones de colores innecesarias. No se debe diseñar web sin criterios acerca del color o utilización una gran cantidad de colores.</p><img src="imagenes/col.png" id="ge3">
+        <h3>Usa unidades rem.</h3><p>El uso de pixeles y em es algo habitual. Mientras que los px son una unidad absoluta, la em son unidades relativas al elemento padre. Esta significa que cuando cambia el tamaño del navegador, es difícil calcular el tamaño para lograr el resultado deseado, debemos de tomar en cuenta que, en pantallas más pequeñas, el tamaño de fuente será más grande en comparación con pantallas más anchas. Esto hará que el texto sea más legible, cuando los usuarios usen un dispositivo móvil.</p>
+            
+            
+            
+        </fieldset>
+        <fieldset id="formu"><legend><h2>Formularios</h2></legend>
+        <p>Los formularios son líneas de contacto entre el usuario y el creador de una pagina web, en donde se le puede pedir al usuario que inserte algunos de sus datos o que selecciones ciertas opciones como en una encuesta. Esta información se almacena en un documento <em>php</em>.</p><h3>Zonas de contacto.</h3><p>Las zonas de contacto en una pagina web son lo que con mas confianza deben de dar, pues en estas le estamos pidiendo al usuario que nos registre sus datos personales, estas deben de contener un pequeño texto en donde le explicamos la función de la zona, una imagen amistosa para el usuario y el espacio donde este colocara sus datos.</p><p>Pero ¿Qué pasa si el formulario es visto desde un dispositivo móvil?, para este tipo de ocasiones es recomendable que la pagina al ser responsiva para móvil la imagen sea omitida para una mejor visualización de los elementos del formulario.</p>
+        <h3>Formulario apilado.</h3><p>El formulario apilado es una de las recomendaciones mas usadas para realizar formularios responsivos para páginas web, ya que estos nos permiten al usuario un mejor y fácil uso de estos si se encuentran en dispositivo móvil</p><p>Esto consta que a partir de la etiqueta label, enlazada con la etiqueta input (o cualquier otra), al momento de dar click a la etiqueta label, envié al usuario directamente a colocar o ingresar el dato requerido, haciendo que se active la función principal.</p><img src="imagenes/uno.png" id=uno><p>Esta función también es útil cuando utilizamos <em>type:radius</em></p>
+        <p>La etiqueta <em>select</em> es otra etiqueta que se recomienda usar para paginas webs responsivas, ya que esta tiene como hijo a la etiqueta <em>option</em> la cual nos permite realizar un menú de opciones que el usuario puede adquirir.</p><img src="imagenes/dos.png" id="dos"><h3>Formulario responsivo.</h3><p>Para lograr que un formulario sencillo sea responsivo se tiene que elaborar en forma de renglones con los div divididos en otros div uno a la derecha y otro a la izquierda y mediante la función <em>@media</em> hacer que su with obtenga un mayor tamaño al que originalmente tenia.</p><h3>Formulario despegable.</h3><p>Otra forma en la que podemos colocar un formulario es haciéndolo despegablecon un <em>button</em> y las funciones de javascript.</p><img src="imagenes/tres.png" id="tres"></fieldset>
+        <fieldset id="rese">
+            <legend><h2>Reset CSS</h2></legend>
+        <p>Antes era muy difícil que varios navegadores web conservaran la misma estructura o el aspecto visual que un diseñador le agregaba al HTML, esto sucede porque cada navegador cuenta con elementos determinados, que otros navegadores no tiene, provocando que las páginas se vieran diferentes a lo que se tiene pensado. En 2007, Eric Meyer en su blog, planteó la discusión sobre cómo lidiar con esta problemática. Este es el código que el planteo:</p>
+        <div class="codigo"><p>/* http://meyerweb.com/eric/tools/css/<br>reset/v2.0 | 20110126License: none (public domain)*/<br>
+ 
+html, body, div, span, applet, object, iframe,<br>
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,<br>
+a, abbr, acronym, address, big, cite, code,<br>
+del, dfn, em, img, ins, kbd, q, s, samp,<br>
+small, strike, strong, sub, sup, tt, var,<br>
+b, u, i, center,<br>
+dl, dt, dd, ol, ul, li,<br>
+fieldset, form, label, legend,<br>
+table, caption, tbody, tfoot, thead, tr, th, td,<br>
+article, aside, canvas, details, embed,<br>
+figure, figcaption, footer, header, hgroup,<br>
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {<br>
+	margin: 0;<br>
+	padding: 0;<br>
+	border: 0;<br>
+	font-size: 100%;<br>
+	font: inherit;<br>
+	vertical-align: baseline;<br>
+}<br>
+/* HTML5 display-role reset for older browsers */<br>
+article, aside, details, figcaption, figure,<br>
+footer, header, hgroup, menu, nav, section {<br>
+	display: block;<br>
+}<br>
+body {<br>
+	line-height: 1;<br>
+}<br>
+ol, ul {<br>
+	list-style: none;<br>
+}<br>
+blockquote, q {<br>
+	quotes: none;<br>
+}<br>
+blockquote:before, blockquote:after,<br>
+q:before, q:after {<br>
+	content: '';<br>
+	content: none;<br>
+}<br>
+table {<br>
+	border-collapse: collapse;<br>
+	border-spacing: 0;<br>
+}<br></p></div>
+        </fieldset>
+        <fieldset id="norma">
+        <legend><h2>Normalize</h2></legend>
+        <p>La idea de tener Normalize CSS es la misma que el Reset CSS, pero tiene algunas diferencias importantes en el momento de usarlo.<br><br>El objetivo principal de Normalize es hacer que el estilo estándar sea consistente en todos los navegadores. Se mantienen algunos estilos estándar de navegador que son útiles para el desarrollo de la página, se corrigen algunos bugs comunes entre los navegadores, algunas mejoras de usabilidad y también se comenta todo el código Normalize y con documentación sobre los cambios.<br>Las diferencias entre Reset CSS y Normalize:</p><ul>
+        <li>Reset CSS borra TODOS los estándares de los navegadores. Es una forma muy agresiva de "limpieza", mientras que Normalize aún mantiene estándares que son útiles.</li>
+        <li>Normalize CSS corrige algunos bugs que existen en las estilizaciones estándares de los navegadores.</li>
+        <li>Normalize es modular. Todo el código está separado por secciones específicas, por lo que puedes buscar cambios de manera más directa.</li>
+        <li>Normalize tiene documentación detallada sobre su uso y justificaciones de los cambios que realiza.</li></ul></fieldset>
+        <fieldset id="vari"><legend><h2>Propiedades personalizadas</h2></legend>
+        <h3>:root</h3><p>Este selector coincide con el elemento raíz del documento. En HTML, el elemento raíz es siempre el elemento html. La sintaxis es la siguiente:</p>
+        <fieldset class="codigo"><p>
+        :rot{<br>propiedad:valor; }</p></fieldset>
+        <p>El elemento :root también puede ser usado con otros formatos del documento, como lo son SVG y XML, la pseudo-clase :root puede hacer referencia a diferentes elementos en estos casos.</p><p>Independientemente del lenguaje, :root siempre seleccionara el elemento superior de un documento. Aun que bien la pseudo-clase :root y el selector html  son representantes del los mismos elementos HTML, :root cuenta con una mayor capacidad ya que tiene una mayor especificidad ante los elementos.</p><p>La pseudo-clase :root puede ser útil para declarar variables CSS globales.</p>
+        <h3>Variables CSS. </h3><p>En CSS, las propiedades personalizadas son entidades que pueden contener valores específicos que se pueden volver a utilizar en un documento.</p>
+        <p>Los sitios web que contienen una gran cantidad de CSS, y a menudo con una gran variedad  de valores repetidos, pueden utilizar las variables en sus hojas de estilo, que les permite  que un  se almacene en un lugar y lugo se haga referencia en varios otros lugares. Sintaxis:</p><fieldset class="codigo"><p>/* Se declara*/<br><br> --nombre: valor;<br><br>
+/* y se invoca mediante la función var(), ejemplo:*/<br><br>propiedad:var(--nombre);</p></fieldset><p>Para la declaración de un variable personalizada, es necesario usar un nombre que comience con dos guiones, y un valor que puede ser cualquier valor valido de CSS. Ejemplo:</p><fieldset class="codigo"><p> elemento{<br>--main-color:red;}</p></fieldset><p>Cosas que hay que tener en cuenta al momento de usar variables en CSS:</p><ul><li>Es importante el uso de identificadores semánticos, para que de esta forma sea mas fácil de entender.</li><li>Es que estas se pueden distinguir entre las mayúsculas y las minúsculas.</li></ul>
+        <h3>Alcance de variables CSS.</h3>
+<p>El alcance de una variable dependerá del selector donde se este declarando la variable. Ejemplo:</p>
+<fieldset class="codigo"><p>:root{<br>--main-bg-color:browm; }</p></fieldset>
+            <h3>Herencia de las variables </h3>
+<p>Las propiedades pueden heredar, lo cual significan que si no se establece ningún valor para una propiedad, esta puede utilizar el valor de su elemento padre.</p>
+
+        
+</fieldset>
+        </div>
+    </section>
+     <footer>
+        <div class="redes">
+            <h3>REDES:</h3>
+            <ul>
+           <li> <a href="https://www.facebook.com/ANIME-MZ-103220718077659">Facebook</a></li>
+             <li> <a href="https://www.instagram.com/mad.001zr/?hl=es-la">Instagram</a></li>
+            <li> <a href="https://www.youtube.com/channel/UCqNa4ZRIcMKUt1BJIZ6ENWw">Youtube</a></li> </ul>
+            </div>
+        <div class="dise">
+            <h3>Diseñador:</h3>
+            <p>Mad Zaragoza.</p></div>
+            </footer>
+</main>
+</body>
+</html>
