@@ -1,0 +1,110 @@
+body{background-color: gray;}
+.estructura{
+    width: 100%;
+    height: auto;
+    
+    margin: 0 auto;}
+.encabezado{
+    width: 90%;
+    height: 220px;
+    background: linear-gradient(#a1d3ff,#db89ff);
+    padding-top: 2%;
+    padding-left: 10%;}
+.encabezado h1{
+    margin-left: 30%;
+    margin-top: 40px;
+    font-size: 70px;
+    color:yellow;
+    text-shadow:color: black; 
+    text-shadow: 2px 2px 12px #6a0089, -6px -6px 12px #006cff;
+    font-family: 'Fredoka', sans-serif;}
+img{
+    width: 50%;
+}
+
+
+.contenido{
+    width: 90%;
+    background-color: #ffffdb;
+    margin-left: 5%;
+    padding-top: 2%;
+    height:auto ;
+}
+.contenido fieldset{
+    width: 80%;
+    margin-left: 10%;
+border:2px solid black;margin-bottom:;margin-top: 10px;}
+
+.contenido h1 {
+    margin-left: 13%;color: darkblue;
+    font-family: 'Ubuntu', sans-serif;
+     font-size: 32px;margin-top: 10px;}
+.contenido h2{
+    color: darkmagenta;
+font-family: 'Ubuntu', sans-serif;
+font-size: 26px; margin-top: 10px;
+    margin-bottom: 20px;}
+.contenido h3{
+    color: #6a0023;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 4%;
+     margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contenido h4{
+    color: #140080;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 4%;
+     margin-top: 10px;
+    margin-bottom: 20px;
+}
+.codigo{background-color: white; color:#363636;border:2px solid black;margin-bottom:;margin-top: 10px; width: 80%;margin-left: 10%;}
+footer{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(#db89ff, #a1d3ff)}
+.redes{
+    margin-top: 20px;
+    width: 40%;
+    float: left;
+    margin-left: 4%;}
+.redes li{
+    list-style: none;
+    margin-top: 10px;}
+.redes a{
+    color: #6d510b;
+    text-decoration: none;}
+.redes a:hover{
+    text-decoration: underline;
+}
+.dise{
+    width: 40%;
+    float: right;
+    margin-top: 30px;}
+.dise p{
+    color:#6d510b;
+}
+
+@media screen and (max-width: 768px){
+    .encabezado h1{margin-left: 20%;}
+}
+}
+@media screen and (max-width: 480px){
+    .encabezado h1{margin-left: 5%;font-size: 50px;}
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,218 @@
+main{
+    height: auto;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 380px;
+    background:linear-gradient(#a1d3ff,#ff89c9);
+    background-attachment:scroll;}
+header img{
+    height: 200px; 
+    width: 100%;
+    margin-top: 20px;}
+  
+
+nav{
+    height: 40px;
+    width: 99%;
+    position: fixed;}
+nav a{
+    color:rgba(240, 255, 255, 0.76);
+    text-decoration: none;}
+body{
+    background:linear-gradient(#a1d3ff,#ff89c9);
+}
+
+section{
+    background-attachment:scroll;
+    width: 80%;
+    height: 2300px;
+    background-color: #2a005c;
+    margin-left: 10%;
+    padding-top: 20px;}
+section p{
+    width: 80%; 
+    color: rgba(240, 248, 255, 0.81);
+    font-size: 24px;
+    margin-left: 10%;
+font-family: 'Poppins', sans-serif;}
+
+.emma{
+    border-radius: 50px;
+    background-color: skyblue;
+    width: 80%;
+    height: 700px;
+    margin-left: 6%;
+    margin-top: 30px;
+    padding: 3%;}
+.emma h2{color: #000060;font-size: 28px;font-family: 'Poppins', sans-serif;}
+.emma h1{color: #000060;font-size: 32px;font-family: 'Poppins', sans-serif;}
+.emma img{float: left;margin-right: 5%;margin-bottom: 2%;margin-top: 2%;}
+.emma p{margin-top: 10px;font-size: 19px;color: black;font-family: 'Poppins', sans-serif;}
+.emma ul {margin-top: 60px;font-size: 19px;color: black;}
+.emma li{list-style: decimal;margin-top: 2%;font-family: 'Poppins', sans-serif;}
+
+
+.ferny{
+    border-radius: 50px;
+    background-color: pink;
+    width: 80%;
+    height: 600px;
+    margin-left: 6%;
+    margin-top: 30px;
+    padding: 3%;
+}
+.ferny h2{color: #600042;font-size: 28px;font-family: 'Poppins', sans-serif;}
+.ferny h1{color: #600042;font-size: 32px;font-family: 'Poppins', sans-serif;}
+.ferny img{float: left;margin-right: 5%;margin-bottom: 2%;margin-top: 2%;width: 40%;}
+.ferny p{margin-top: 10px;font-size: 19px;color: black;font-family: 'Poppins', sans-serif;}
+.ferny ul {margin-top: 30px;font-size: 19px;color: black;}
+.ferny li{list-style: decimal;margin-top: 2%;font-family: 'Poppins', sans-serif;}
+
+.david{
+    border-radius: 50px;
+    background-color: #e0a3f2;
+    width: 80%;
+    height: 570px;
+    margin-left: 6%;
+    margin-top: 30px;
+    padding: 3%;
+}
+.david h2{color: #310055;font-size: 28px;font-family: 'Poppins', sans-serif;}
+.david h1{color: #310055;font-size: 32px;font-family: 'Poppins', sans-serif;}
+.david img{float: left;margin-right: 5%;margin-bottom: 2%;margin-top: 2%;width: 40%;}
+.david p{margin-top: 30px;font-size: 19px;color: black;font-family: 'Poppins', sans-serif;}
+.david ul {margin-top: 30px;font-size: 19px;color: black;}
+.david li{list-style: decimal;margin-top: 2%;font-family: 'Poppins', sans-serif;}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(#db89ff, #a1d3ff)}
+.redes{
+    margin-top: 20px;
+    width: 40%;
+    float: left;
+    margin-left: 8%;}
+.redes li{
+    list-style: none;
+    margin-top: 10px;}
+.redes a{
+    color: #000060;
+    text-decoration: none;font-family: 'Poppins', sans-serif;}
+.redes a:hover{
+    text-decoration: underline;
+}
+.dise{
+    width: 40%;
+    float: right;
+    margin-top: 30px;}
+.dise p{
+    color:#000060;font-family: 'Poppins', sans-serif;
+}
+
+.drop-button{
+  background-color:  #6436ff;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+width: 20%;
+    height: 30px;
+    margin-left: 20%;
+}
+.drop-button:hover, drop-buttton:hover{
+  background-color: #5e2dff;
+}
+.dropdown{
+ 
+  display: inline-block;
+ }
+.dropdown-content{
+  display: none;
+  position: absolute;
+  width: 80%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    background-color:darkblue;
+    margin-left: 10%;
+    height: 40px;
+    padding-top: 20px;
+}
+.dropdown-content a{
+  color: rgba(240, 255, 255, 0.69);
+  width:30%;
+  padding: 12px 16px;
+  display: inline;
+    margin-left: 8%;
+    font-size: 20px;
+    
+}
+.dropdown-content a:hover{
+  background-color: #f1f1f1
+}
+.show {
+  display: block;
+}
+
+
+@media screen and (max-width: 1024px){
+    .dropdown-content a{margin-left: 7%;}
+    .emma ul {margin-top: 20px;margin-left: 2%;}
+    .emma{ height: 690px;}
+    .emma img{width: 30%;}
+    
+    .ferny{
+    height: 620px;}
+.ferny img{width: 30%;}
+.ferny ul {margin-top: 30px;font-size: 19px;color: black;margin-left: 2%;}
+.david ul {margin-top: 30px;font-size: 19px;color: black;margin-left: 2%;}
+    
+}
+@media screen and (max-width: 768px){
+    section{height: 2850px;}
+  .dropdown-content a{
+    margin-left: 4%;
+    font-size: 16px;}
+    .emma{height: 870px;}
+    .emma img{width: 50%;margin-left: 20%;}
+    .emma p{font-size: 16px;text-align: justify;}
+    .emma li{font-size: 16px;margin-left: 2%;}
+    .ferny{height: 770px;}
+    .ferny img{width: 70%;margin-left: 12%;margin-bottom: 2%;}
+    .ferny p{font-size: 16px;text-align: justify;}
+    .ferny li{font-size: 16px;margin-left: 2%;}
+    .david {height: 770px;}
+    .david  img{width: 70%;margin-left: 12%;margin-bottom: 2%;}
+    .david  p{font-size: 16px;text-align: justify;}
+    .david  li{font-size: 16px;margin-left: 2%;}
+}
+@media screen and (max-width: 480px){
+    section{height: 3150px;}
+    .dropdown-content{height: 40px;}
+    .dropdown-content a{margin-left: 0.5%;font-size: 16px;width: 10%; padding: 3px 2px;display: inline;}
+    .emma{height: 1020px;}
+    .emma h2{font-size: 20px;margin-left: 5%;}
+     .emma h1{font-size: 20px;margin-left: 5%;}
+    .emma img{width: 90%;margin-left: 5%;}
+    .emma p{font-size: 16px;text-align: justify;}
+    .emma li{font-size: 16px;margin-left: 2%;}
+   
+    .ferny{height: 820px;}
+    .ferny h2{font-size: 20px;margin-left: 5%;}
+     .ferny h1{font-size: 20px;margin-left: 5%;}
+    .ferny img{width: 90%;margin-left: 5%;}
+    .ferny p{font-size: 16px;text-align: justify;}
+    .ferny li{font-size: 16px;margin-left: 2%;}
+    
+     .david{height: 820px;}
+    .david h2{font-size: 20px;margin-left: 5%;}
+     .david h1{font-size: 20px;margin-left: 5%;}
+    .david img{width: 90%;margin-left: 5%;}
+    .david p{font-size: 16px;text-align: justify;}
+  .david li{font-size: 16px;margin-left: 2%;}
+   
+    }

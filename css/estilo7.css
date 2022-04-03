@@ -1,0 +1,226 @@
+/*UNIDAD 1*/
+.contenido #propi ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #refe ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #especi ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #anima ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #dom ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #refere ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #piedad ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #event ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #list ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #etique ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+.contenido #med ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: circle;
+}
+
+/*UNIDAD 2*/
+.contenido #prow ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+     margin-bottom: 10px;
+    list-style: circle;
+}
+.contenido #svg ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+     margin-bottom: 10px;
+    list-style: circle;
+    margin-bottom: 10px;
+}
+.contenido #uni ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+     margin-bottom: 10px;
+    list-style: circle;
+}
+.contenido #tipo ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+     margin-bottom: 10px;
+    list-style: circle;
+}
+.contenido #formu ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+     margin-bottom: 10px;
+    list-style: circle;
+}
+.contenido #rese ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    list-style: circle;
+}
+.contenido #norma ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    list-style: circle;
+}
+.contenido #vari ul li{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    list-style: circle;
+}
+
+@media screen and (max-width: 480px){
+    .contenido #Hola p{ 
+font-size: 16px;
+ }
+.contenido #Hola img{
+font-size: 16px;}
+.contenido #hol p{
+    font-size: 16px;
+}
+.contenido p{margin-bottom: 10px;}
+.contenido #propi ul li{
+   font-size: 16px;
+    margin-left: 15%;
+}
+.contenido #refe ul li{
+ font-size: 16px;
+    margin-left: 15%;
+}
+.contenido #especi ul li{
+  font-size: 16px;
+    margin-left: 15%;
+}
+.contenido #anima ul li{
+  font-size: 16px;
+    margin-left: 15%;
+}
+.contenido #dom ul li{
+  font-size: 16px;
+    margin-left: 15%;
+}
+.contenido #refere ul li{
+   font-size: 16px;
+    margin-left: 15%;
+}
+.contenido #piedad ul li{
+   font-size: 16px;
+    margin-left: 15%;
+}
+.contenido #event ul li{
+  font-size: 16px;margin-left: 15%;
+}
+.contenido #list ul li{
+ font-size: 16px;margin-left: 15%;
+}
+.contenido #etique ul li{
+   font-size: 16px;margin-left: 15%;
+}
+.contenido #med ul li{
+    font-size: 16px;margin-left: 15%;
+}
+/*UNIDAD 2 */
+.contenido #prow ul li{
+ font-size: 16px;margin-left: 15%;
+}
+.contenido #svg ul li{
+   font-size: 16px;margin-left: 15%;
+}
+.contenido #uni ul li{
+  font-size: 16px;margin-left: 15%;
+}
+.contenido #tipo ul li{
+ font-size: 16px;margin-left: 15%;
+}
+.contenido #formu ul li{
+font-size: 16px;margin-left: 15%;
+}
+.contenido #rese ul li{
+   font-size: 16px;margin-left: 15%;
+}
+.contenido #norma ul li{
+    font-size: 16px;margin-left: 15%;
+}
+.contenido #med ul li{
+   font-size: 16px;margin-left: 15%;
+}
+.contenido #vari ul li{
+   font-size: 16px;margin-left: 15%;
+}
+
+}

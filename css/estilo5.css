@@ -1,0 +1,53 @@
+/* UNIDAD 1*/
+#menu{position: fixed;}
+
+/*UNIDAD 2*/
+
+/*Botón*/
+.drop-button{
+  background-color:  #00baf2;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Botón hover y focus*/
+.drop-button:hover, drop-buttton:hover{
+  background-color: #299393;
+}
+
+/*Posición del contenedor*/
+.dropdown{
+  position: relative;
+  display: inline-block;
+ }
+
+/*submenu*/
+.dropdown-content{
+    height: 200px;
+    overflow-y:scroll;
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+    
+  color: #30007c;
+  padding: 12px ;
+  display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+  background-color: #f1f1f1
+}
+.show {
+    
+  display: block;
+}
