@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/Reset.css">
+      <link rel="stylesheet" href="css/Principal.css">
+      <link rel="stylesheet" href="css/Textos.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/Imagenes.css">
+    <link rel="stylesheet" href="css/Textos.css">
+    <link rel="stylesheet" href="css/Listas.css">
+     
+     
+     <title>BITACORA</title>
+    </head>
+    <body>
+    <main class="estructura">
+<header class="encabezado">
+    
+           <nav id="menu">
+              
+        <div class="dropdown">
+   <button onclick="myFunction()" class="drop-button">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+       <a href="index.html">Home</a>
+               <a href="#frame">FRAMEWORK</a>
+               <a href="#flex">FLEXBOX</a>
+               <a href="#movil">Mobil first</a>
+               <a href="#patron">Patrones de diseño responsivo</a>
+               <a href="#look">Look&feel</a>
+      
+            
+          
+    </div>
+  </div></nav>
+<script>/*Cuando se hace click en el botón, muestra el submenu*/
+function myFunction() {   
+  //Añade una clase al elemento que tenga el id myDropdown
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+//Cierra el submenu si se clica fuera
+window.onclick = function(event){
+  if(!event.target.matches('.drop-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0;  i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      //Busca dentro de drop-content los elementos con la clase show
+      if (openDropdown.classList.contains('show')){
+        //elimina la clase show de los elementos dentro de drop-content
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+         
+<h1>UNIDAD 3</h1>  
+    </header>
+        
+<section class="contenido">
+    
+<fieldset id="frame">
+<legend><h2>Frameworks</h2></legend>
+<p>Un framework es una herramienta de desarrollo web que se define como una aplicación o conjunto de módulos que permiten un desarrollo más ágil de aplicaciones, mediante a la aportación de algunas librerías y/o funcionalidades ya creadas.</p><p>
+    Una ventaja del uso de framework es que el diseñador se puede centrar completamente en algún problema que desee resolver y no en la implementación de funcionalidades que normalmente son de uso común y ya están resueltas por alguien más.</p><a href="index5.html"><img src="imagenes/Framework.png"></a>
+    <p>Toca la imagen para ver algunos...</p>
+</fieldset>
+    
+<fieldset id="flex">
+<legend><h2>Modulo flexbox</h2></legend>
+<p>Es candidato a recomendación del W3C a partir de octubre del 2017.</p>
+<p>Tiene como objetivo proporcionar una manera más eficiente la distribución del espacio entre los elementos en un contenedor, incluso cuando su tamaño es desconocido.
+La idea principal es otorgar al contenedor la capacidad de modificar los lados y elementos para llenar mejor el espacio.</p>
+<p>Existen propiedades que se aplican directamente al contenedor y otras que se le aplican a los hijos. Además de que cuenta con:</p>
+<ul>
+<li>Soporte del navegador.</li>
+<li>display:flex;sintaxis reciente de la especificación.</li>
+<li>display :flexbox, sintaxis no oficial del 2011.</li>
+<li>display:box; sintaxis antigua de 2009.</li></ul>
+
+<h3>Propiedades del elemento contenedor.</h3>
+<p>Se modifica el elemento padre o elemento contenedor y conforme a este, los elementos hijos serán afectos.</p><a href="index6.html"><img src="imagenes/FLEXBOX.png"></a>
+<p>Da click en la imagen para ver las propiedades.</p>
+
+<h3>Propiedades para los elementos flexibles.</h3>
+<p>1. Order, mostrara a los elementos con flujo normal de la página, pero también podemos controlar el orden de los elementos. Por default order se encuentra en 0, pero puede ser modificado con números positivos y negativos.</p><img src="imagenes/ORDER.svg">
+    
+<p>2. flex-grow, define la capacidad para que un ítem crezca si es necesario, acepta un valor entero, además indica la cantidad de espacio disponible dentro del contenedor. No le es válido los números negativos, y por default este se encuentra en 0.</p><p>Además, aumentara las unidades que se le hayan establecido correspondientemente al espacio disponible que existe en el elemento contenedor. para ello se calcula de la siguiente manera:</p><p><b>Unidad total= Espacio disponible/La suma del flex-grow de los ítems.</b></p><img src="imagenes/GROW.svg">
+    
+<p>5. flex-shrink, especifica la capacidad de un elemento para reducir en relación con el resto de los elementos flexibles del contenedor, además por default este se encuentra en 1 unidad.</p><p>Al contrario del anterior, este especifica el comportamiento de los ítems cuando el tamaño del contenedor es menor al de los ítems que lo componen.</p><p>Para ello se calcula de la siguiente manera:</p><p><b>unidad de reducción=espacio faltante/suma de flex-shrink</b></p><img src="imagenes/SHRINK.svg">
+    
+<p>4. flex-basis, define el tamaño predeterminado de un elemento antes de distribuir el espacio restante, por ejemplo, una longitud.</p>
+    
+<p>5. flex-basis:numero; estable hasta que longitud los elementos distribuirá su tamaño referente a una medida limitante.</p>
+    
+<p>6. flex, es una abreviatura de flex-grow,flex-shrink y flex, basis combinadas en una sola, sus valores predeterminados son 1,0, auto.</p>
+    
+<p>7. align-self, permite que la alineación predeterminada se anule para los elementos flex.</p>
+</fieldset>
+    
+<fieldset id="movil"><legend><h2>Mobil first</h2></legend>
+<p>Una investigación realizada por la GSMA afirma que el uso del internet aumentará dispositivos móviles crecerá a más del 50%.</p>
+<p>Estar conectados a internet se a convertido en una actividad de nuestro día a día, y poco a poco empezamos a dejar de usar la computadora para trasladarnos a los dispositivos móviles.</p>
+<p>En 2015, Google estaba hablando sobre esta tendencia y priorizo los sitios web que son mobile friendly, en los que los resultados de la búsqueda.</p>
+<p>Luke Wroblewski en 2011 desarrollo el concepto de mobile first, cuando publico el libro Mobile First, en el cual propone que primero se debe crear un diseño web pensado primero para un dispositivo móvil, para después ajustarlo al tamaño de una pantalla de computadora.<br><img src="imagenes/MOVIL.svg"><br>
+    
+Para todo esto debemos tener en cuenta que todo lo que no es esencial o relevante debe de ser descartado.</p>
+<p>Lo primero para empezar un diseño web es que se debe tener claro el contenido básico y sepáralo del contenido sobrante y prescindible.<br><br>
+Las decisiones deben tomarse de acuerdo con las funciones del usuario.</p>
+<p>Si el espacio realmente es pequeño, siempre puede darse la opción de habilitar un menú de barra con las opciones que no se puedan incluir en la pantalla.<br><br>Algunos de los repor que presenta Mobile first son:</p>
+<ul><li>El tamaño de la pantalla reducido</li>
+    <li>La conexión móvil limitada</li>
+    <li>El comportamiento de los usuarios</li>
+    <li>Las pantallas 'touch', etc.</li></ul>
+    </fieldset>
+    
+<fieldset id="patron"><legend><h2>Patrones de diseño</h2></legend>
+<p>Los patrones de diseño web adaptables evolucionan rápidamente, pero existen varios patrones establecidos que funcionan bien en los diferentes equipos de escritorio y dispositivos móviles.</p>
+<p><b>Categorías de patrones:</b></p>
+<ul><li><em>mostly fluid.</em> El origen del nombre "mayormente liquido" es debido a que la estructura principal de los layouts no cambia realmente hasta dimensiones obiles donde se aplica la caída de columna, el patrón consiste, principalmente, en una cuadricula fluida.</li>
+    <img src="imagenes/fluid.svg">
+    <li><em>column drop.</em> El tamaño total de los elementos está a disocian de mantenerse constante, se adapta a distintos tamaños de la pantalla. en caso de contener varias columnas.</li>
+    <img src="imagenes/drop.svg">
+    <li><em>layout shifter</em> Es el más adaptable, ya que posee varios puntos de interrupción en diferentes anchos de pantalla.</li>
+    <img src="imagenes/layout.svg">
+    <li><em>tiny tweaks</em> Permite realizar pequeños cambios en el diseño, como ajustar el tamaño de la funte, cambiar el tamaño de las imágenes o desplazar o el contenido de una manera no tan significativa. trabaja correctamente con diseñes de una sola columna.</li>
+    <img src="imagenes/T.svg">
+    
+    <li><em>off canvas.</em> Coloca el contenido menos usado fuera de la pantalla y solo lo muestra cuando el tamaño de la pantalla es sufrientemente grande.</li> <img src=imagenes/OFF.svg></ul>
+</fieldset>
+    
+<fieldset id="look"><legend><h2>Look&Feel</h2></legend>
+    <p>Es una expresión inglesa que puede tener varios significados dependiendo del contexto en el cual se use. Significa textualmente el “aspecto y tacto”, mientras que, en el contexto de desarrollo, su significado es “aspecto y comportamiento”.<br><br>
+El lool&feel de una GUI, es el conjunto de propiedades y características que le dan una identidad visual única y puede ser percibidos de manera diferente de acuerdo con cada usuario.<br><br>
+El aspecto o look de las interfaces se define por los siguientes factores:
+</p>
+<ul><li>Paleta de colores.</li>
+    <li>Imagenes.</li>
+    <li>Diseño.</li>
+    <li>Opciones de fuente.</li>
+    <li>Estilo general.</li>
+    <li>Disposición de elementos</li></ul>
+<p>Feel es el comportamiento de las interfaces esta influido por la interacción que se determina por las siguientes características</p>
+<ul><li>El movimiento y la respuesta de los componentes dinámicos y como menús despegables, botones, formas y galerías.</li>
+    <li>Los efectos de sonido.</li>
+    <li>La rapidez con la que las páginas y las imágenes se cargan.</li></ul>
+<p>El aspecto y el comportamiento de un proyecto web son dos cuestiones fundamentales, es importante realizar un análisis previo para establecer que queremos reflejar, ya que en un instante muestra una actitud a los usuarios.<br><br>
+También se puede describir como su “personalidad”. La cual debe coincidir con la actitud de la empresa y sus objetivos. Y aunque existe una cierta libertar de diseño, los usuarios pueden confundirse por los proyectos web cuyo look&feel no cumple expectativas.<br><br>
+El look&feel puede ser descrito usando adjetivos. Por ejemplo:</p>
+<ul><li>Amistoso.</li>
+    <li>Accesible.</li>
+    <li>Profesional.</li>
+    <li>Experimentado.</li>
+    <li>Exclusivo.</li>
+    <li>Innovador.</li>
+    <li>Elegante.</li>
+    <li>Alta tecnología.</li>
+    <li>Poderoso.</li></ul>
+<p>Por otra parte, los proyectos web mal considerados pueden caer en categorías menos favorables:</p>
+    <ul><li>Aburrido</li>
+        <li>Tenso</li>
+        <li>Pesado</li>
+        <li>Anticuado</li>
+        <li>Desordenado</li>
+        <li>Confuso</li>
+        <li>Infantil</li></ul>
+    </fieldset>
+   
+    
+    
+    
+</section>
+        
+         <footer>
+        <div class="redes">
+            <h3>REDES:</h3>
+            <ul>
+           <li> <a href="https://www.facebook.com/ANIME-MZ-103220718077659">Facebook</a></li>
+             <li> <a href="https://www.instagram.com/mad.001zr/?hl=es-la">Instagram</a></li>
+            <li> <a href="https://www.youtube.com/channel/UCqNa4ZRIcMKUt1BJIZ6ENWw">Youtube</a></li> </ul>
+            </div>
+        <div class="dise">
+            <h3>Diseñador:</h3>
+            <p>Mad Zaragoza.</p></div>
+            </footer>
+    </main>
+    </body>
+</html>

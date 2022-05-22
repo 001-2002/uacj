@@ -1,0 +1,186 @@
+   <!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/Reset.css">
+      <link rel="stylesheet" href="css/Principal.css">
+     <link rel="stylesheet" href="css/estilo5.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/Textos.css">
+    <link rel="stylesheet" href="css/Imagenes.css">
+    <link rel="stylesheet" href="css/Textos.css">
+    <link rel="stylesheet" href="css/Listas.css">
+     
+     
+     <title>BITACORA</title>
+    </head>
+    <body>
+        
+<main class="estructura">
+<header class="encabezado">
+    
+           <nav id="menu">
+              
+        <div class="dropdown">
+   <button onclick="myFunction()" class="drop-button">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+       <a href="index4.html">Regresar</a>
+               <a href="#boot">Bootstrap</a>
+               <a href="#skele">Skeleton</a>
+               <a href="#fun">Foundation</a>
+               <a href="#Premini">Pre_mini</a>
+               <a href="#pure">Pure CSS</a>
+      
+            
+          
+    </div>
+  </div></nav>
+<script>/*Cuando se hace click en el botón, muestra el submenu*/
+function myFunction() {   
+  //Añade una clase al elemento que tenga el id myDropdown
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+//Cierra el submenu si se clica fuera
+window.onclick = function(event){
+  if(!event.target.matches('.drop-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0;  i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      //Busca dentro de drop-content los elementos con la clase show
+      if (openDropdown.classList.contains('show')){
+        //elimina la clase show de los elementos dentro de drop-content
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+         
+<h1>UNIDAD 3</h1>  </header>
+    
+<section class="contenido"> 
+<fieldset id="boot"><legend><h2>Bootstrap</h2></legend>
+<p>Es una herramienta que proporciona interactividad en la página, por lo que ofrece una serie de componentes que facilitan la comunicación con el usuario.<br><br>
+Es un framework CSS utilizado en aplicaciones front-end — es decir, en la pantalla de interfaz con el usuario— para desarrollar aplicaciones que se adaptan a cualquier dispositivo.</p><img src="imagenes/boots.svg">
+<h3>¿Como imprementarlo?</h3>
+<p>Se puede visitar la página oficial de Bootstrap y descargar el paquete. De esta forma, puedes tener los archivos de este framework en tu servidor.<br>En los archivos de instalación de Bootstrap puedes ver un directorio donde están las hojas de estilo (css), otro directorio para los ficheros JavasScript (js) y un directorio de fuentes (fonts) donde se encuentra la fuente por defecto para los iconos que utiliza Bootstrap (Glyphicons).<br><br>
+Para poder trabajar con Bootstrap tan solo debes añadir en la cabecera, dentro de la etiqueta <em>head</em> o antes de la etiqueta de cierre <em>body</em> de tu archivo HTML las hojas de estilo y el archivo JavaScript de Bootstrap.</p>
+<h3>¿Como funciona?</h3>
+<p>Existe un archivo principal llamado bootstrap.css, que tiene una definición para los estilos utilizados. Básicamente, la estructura del framework se compone de dos directorios:<br>
+<em>css:</em> contiene los archivos necesarios para la estilización de los elementos y una alternativa al tema original.<br><br>
+<em>js:</em> contiene la parte posterior del archivo bootstrap.js (original y minificado), responsable de la ejecución de aplicaciones de estilo que requieren manipulación interactiva.​
+Para asignarle una característica a un elemento, simplemente debemos declarar la hoja de estilo bootstrap junto con su js, y si se quiere modificar algún estilo en específico se hace por medio de las clases.</p>
+<h3>Ventajas</h3>
+<p>1. Es una herramienta muy sencilla de utilizar e intuitivo, adaptada a cualquier programador y que permite crear grandes sitios web en poco tiempo.<br><br>
+
+2. Provee de todas las reglas CSS para que nuestro sitio web se adapte de manera dinámica a la mayoría de las pantallas (es responsive).<br><br>
+
+3. Cuenta con múltiples implementaciones externas: WordPress, Drupal, SASS o jQuery UI.<br><br>
+
+4. Hace uso de componentes y servicios que han sido creados por la comunidad web. Como, por ejemplo: HTML5 shim, Normalize.css, OOCSS, jQuery UI, LESS o GitHub. <br><br>
+
+5. Bootstrap nos ofrece distintas herramientas para extender nuestro framework, así como adaptarlo a nuestras necesidades y características, es decir que nosotros lo podemos editar.<br><br>
+
+6. Ofrece ”themes” o temas de estilo por defecto los cuales se pueden mantener o modificar.<br><br>
+
+7. Bootstrap utiliza LESS, una ampliación a las hojas de estilo CSS, que funciona igual que un lenguaje de programación.</p></fieldset>
+    
+<fieldset id="skele"><legend><h2>Skeleton</h2></legend>
+<p>Skeleton es un framework ligero para css creado por Dave Gama el 15 de mayo del 2011.<br>
+Este Framework está centrado para las personas que están pensando en diseñar un proyecto web pequeño o cuando solo se necesitan utilizar las funciones más básicas, gracias a esto,este framework tiende a ser ligero en cuanto a peso y los recursos que utiliza para su implementación, Por defecto Skeletonutiliza elementos base de HTML además de incluir GRID.<br><br>
+La tipografía y fuentes se ajusta con REMS, haciendo que esta sea responsiva.</p>
+<img src="imagenes/Skeleton.svg">
+<h3>Utilidades.</h3>
+<p>Skeleton viene con estilos predefinidos que son adicionales. Algunos son los siguientes:</p>
+<ul><li>button clase: Le permite diseñar una etiqueta “a”(Para referenciar hyperlinks) elemento ancla “()” como botón</li>
+<li>background-color: Permite darle al botón un color azul usando la clase “button-primary”.</li>
+<li>u-pull-left: Permite agregar un elemento flotante hacia la izquierda.</li>    
+<li>u-pull-right: Permite agregar un elemento flotante hacia la derecha.</li>
+<li>u-cf: Es una clase ayudante que permite borrar algunos flotantes.</li></ul>
+
+<h3>Ventajas.</h3><ul>
+<li>Es Ligero y fácil de personalizar en el mercado.</li>
+<li>Es rápido y sencillo de usar.</li>
+<li>Es multiplataforma y fácil de desarrollar.</li></ul>
+    
+<h3>Desventajas</h3><ul>
+<li>Tiene una limitación por su código indefinido.</li>
+<li>Tiene un menor control visual.</li>
+<li>Tiene una importación innecesaria de códigos.</li></ul>
+    
+</fieldset>
+    
+<fieldset id="fun"><legend><h2>Foundation</h2></legend>
+<p>Este framework está dividido en módulos, lo cual significa que en el momento de  su  descarga,  el  usuario  puede  elegir  que  módulos  necesita  para  surespectivo trabajo.<br>Es un marco responsivo que contiene muchos elementos HTML y CSS ademásde extensiones opcionales de JavaScript.Se pueden utilizar plantillas y fragmentos de código para diseñar interfaces deusuario.</p>
+    
+<h3>Ventajas.</h3>
+<ul><li>Mejora la velocidad de ejecución.</li>
+    <li>Es mas rápido para codificar.</li>
+    <li>Foundation goza de una reputación comoplataforma   de   desarrollo   muy   liviana.Incluso,  debido  a  la  estructura  modular  yamencionada y a la libertad en la selección,es  posible  reducir  el  tamaño  de  esteentorno de trabajo aún más.</li></ul>
+    
+<h3>Desventajas.</h3>
+    <ul><li>Trabajar con estas hojas de estilo noresulta fácil para quienes no tenganexperiencia,  que  demanda  graninversión de tiempo y trabajo.</li>
+    <li>Tiene  una  muy  reducida  selecciónde  plantillas  y  falta  de  soporte  paralas versiones mas antiguas.</li>
+    <li>La  integración  de  componentesexternos.</li></ul>
+    </fieldset>
+    
+<fieldset id="Premini"><legend><h2>Pre-mini</h2></legend>
+<p>Es el conjunto de reglas de Normalize.css v7.0.0 para tratar las diferencias entre navegadores, al tiempo que aplica algunos valores predeterminados de buen gusto, como el uso de la pila de fuentes nativas para averiguar la mejor fuente para cada dispositivo.<br><br>mini.css incluye muchas funciones en un paquete pequeño, mientras que se basa únicamente en CSS, lo que significa no demos preocuparnos por ningún conflicto con otras bibliotecas de JavaScript que pueda estar usando.</p>
+    
+<h3>Ventajas</h3>
+<ul><li>No es demasiado pesado (46kb).</li>
+    <li>Documentación clara y búsqueda sencilla.</li>
+    <li>Sistema de grid (columnas) clónico de Bootstrap.</li>
+    <li>Se aplica la gran mayoría de los estilos a las etiquetas. 3 temas incluidos (Original, Dark y Nord).</li>
+    <li>No necesitas JavaScript para nada.</li></ul>
+<h3>Desventajas</h3>
+<ul>
+<li>Es un formato simple. Todo lo básico viene incluido, pero el resto tendrás que fabricarlo.</li>
+    <li>Las listas podrían estar más elaboradas.</li>
+    <li>No cumple el formato típico para los menús de headers (nav, ul, li, a).</li></ul>
+    
+    </fieldset>
+    
+<fieldset id="pure"><legend><h2>Pure Css</h2></legend>
+<p>En el año 2013, Yahoo lanza Pure CSS.<br><br>
+Una estructura básica para el desarrollo de interfaces web que es considerada como una alternativa a Bootstrap de gran calidad, pero que también se puede utilizar en conjunto con este framework.</p>
+<p> El framework de Yahoo asigna a cada módulo (independientemente de si se trata del diseño regular o de reglas específicas) un nombre de clase estándar con el prefijo “pure” y los interpreta como submódulos.</p>
+    
+<h3>¿Qué es Pure.CSS?</h3>
+<p>Es un framework CSS para facilitar el front-end de los desarrolladores web.<br><br>
+La base de este framework está en Normalize.css, un proyecto donde se pretende que todos los navegadores muestren exactamente lo mismo (bueno, o casi exactamente).</p>
+<img src="imagenes/pure.svg">
+    
+<h3>Caracteristicas.</h3>
+<ul>
+    <li>Tiene una cuadrícula (grid) que se adapta a todas las resoluciones.</li>
+    <li>Botones con estilo, tanto con a como con button.</li>
+    <li>Permite construir menús horizontales, verticales, de varios niveles.</li>
+    <li>Facilidad para crear formularios, con estilos comunes.</li>
+    <li>Varios formatos comunes de tablas.</li>
+    <li>Look minimalista, y fácil de modificar.</li>
+    <li>Permite modificar con skin builder.</li>
+    <li>Ocupa poco tamaño.</li></ul>
+<p>Pure se puede colocar en el HTML de la siguiente manera:<br><br>
+<em>link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"</em><br><br>
+El Sitio web de Pure está construido con su framework, por lo que su código minimalista y bien desarrollado lleva a una guía sencilla de navegar.</p>
+</fieldset>
+</section>
+    
+<footer>
+        <div class="redes">
+            <h3>REDES:</h3>
+            <ul>
+           <li> <a href="https://www.facebook.com/ANIME-MZ-103220718077659">Facebook</a></li>
+             <li> <a href="https://www.instagram.com/mad.001zr/?hl=es-la">Instagram</a></li>
+            <li> <a href="https://www.youtube.com/channel/UCqNa4ZRIcMKUt1BJIZ6ENWw">Youtube</a></li> </ul>
+            </div>
+        <div class="dise">
+            <h3>Diseñador:</h3>
+            <p>Mad Zaragoza.</p></div>
+    </footer>
+        </main>
+    </body>
+</html>
